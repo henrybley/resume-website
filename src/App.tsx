@@ -30,21 +30,7 @@ function Header() {
         </Section>
     );
 }
-function AboutMe() {
-    return (
-        <Section fullscreen={false}>
-            <InnerSection>
-                <TextBlock>
-                    I am an experienced developer who efficiently self-manages and respects deadlines.
-                    Having an extensive customer service background guarantees effective, professional communication.
-                    Recently returned to finish my diploma to complement my self-taught programming with a formal education.
-                    Attention to detail with an eye for the big picture is my strength. Living in Europe, New Zealand,
-                    and The United States has given me an international perspective.
-                </TextBlock>
-            </InnerSection>
-        </Section>
-    );
-}
+
 function Experience() {
     return (
         <Section fullscreen={false}>
