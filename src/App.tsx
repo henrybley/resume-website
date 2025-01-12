@@ -88,8 +88,8 @@ function Projects() {
                                 Pull requests, Self hosted Runners and more. Utilizing Java, Prometheus, Grafana.
                             </TextBlock>
                             <ul className="mt-2 text-blue-600">
-                                <li>"Repo: github.com/github-insights/github-metrics"</li>
-                                <li>"Documentation: github-insights.github.io"</li>
+                                <li>Repo: <a href='https://github.com/github-insights/github-metrics'>github.com/github-insights/github-metrics</a></li>
+                                <li>Documentation: <a href="https://github-insights.github.io">github-insights.github.io</a></li>
                             </ul>
                         </>
                     </SubSection>
@@ -104,10 +104,8 @@ function Projects() {
                             how different starting conditions could affect survivability.
                         </TextBlock>
                         <ul className="mt-2 text-blue-600">
-                            <li>"Repo: github.com/tomellm/third_life"</li>
-                            <li>
-                                "Article: dev.to/tomellm/third-life-simulating-reality-41if"
-                            </li>
+                            <li>Repo: <a href='https://github.com/tomellm/third_life'>github.com/tomellm/third_life</a></li>
+                            <li>Article: <a href='https://dev.to/tomellm/third-life-simulating-reality-41if'>dev.to/tomellm/third-life-simulating-reality-41if</a></li>
                         </ul>
                     </div>
                 </>
