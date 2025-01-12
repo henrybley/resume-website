@@ -7,8 +7,8 @@ interface SectionProps {
 export function Section({ children, fullscreen }: SectionProps) {
 
     return (
-        <div className={(fullscreen ? "sm:min-h-screen lg:h-screen pt-12 " : "") + "pb-12 px-6 sm:px-8 lg:px-12"}>
-            <div className={"h-full bg-gray-300 shadow-lg rounded-lg overflow-hidden"}>
+        <div className={(fullscreen ? "sm:min-h-screen lg:h-screen pt-24 " : "") + "pb-24 px-6 lg:px-36"}>
+            <div className={"h-full bg-gray-700 shadow-lg rounded-lg overflow-hidden"}>
                 {children}
             </div>
         </div>
@@ -32,7 +32,7 @@ interface SectionHeaderProps {
 }
 export function SectionHeader({ content }: SectionHeaderProps) {
     return (
-        <h2 className="text-2xl font-bold text-amber-700 mb-4">{content}</h2>
+        <h2 className="text-2xl font-bold text-gray-100 mb-4">{content}</h2>
     );
 }
 
@@ -56,16 +56,16 @@ export function SubsectionHeader({ content, dates }: SubsectionHeaderProps) {
     if (dates != '') {
         return (
             <div className="flex justify-between items-start">
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-lg font-semibold text-amber-700">
                     {content}
                 </h3>
-                <span className="text-gray-600">{dates}</span>
+                <span className="text-amber-700">{dates}</span>
             </div>
         );
     }
 
     return (
-        <h3 className="text-lg font-semibold text-gray-900">
+        <h3 className="text-lg font-semibold text-amber-700">
             {content}
         </h3>
     );

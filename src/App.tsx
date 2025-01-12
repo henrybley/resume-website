@@ -9,11 +9,11 @@ function Header() {
         <Section fullscreen={true}>
             <header className="h-full px-8 lg:px-32 py-16 lg:py-32 flex flex-col">
                 <div className="flex-grow text-right">
-                    <h1 className="text-6xl font-bold text-gray-900">Henry Bley</h1>
+                    <h1 className="text-6xl font-bold text-gray-100">Henry Bley</h1>
                     <h2 className="text-3xl text-amber-700 mt-1">Developer</h2>
                     <div className='w-10 mt-1 float-right'>
                         <a href='https://www.linkedin.com/in/henry-bley-90295264'>
-                            <div className='rounded-lg bg-gray-200 p-j'>
+                            <div className='rounded-lg bg-gray-200 p-1'>
                                 <img src={li_logo} />
                             </div>
                         </a>
@@ -82,32 +82,31 @@ function Projects() {
                                 content='Github Metrics — Xplore Internship Project'
                                 dates=''
                             />
-
                             <TextBlock>
                                 A highly configurable plug and play service to visualize all of your Github organizations Actions,
                                 Pull requests, Self hosted Runners and more. Utilizing Java, Prometheus, Grafana.
                             </TextBlock>
-                            <ul className="mt-2 text-blue-600">
+                            <ul className="mt-2 text-gray-950">
                                 <li>Repo: <a href='https://github.com/github-insights/github-metrics'>github.com/github-insights/github-metrics</a></li>
                                 <li>Documentation: <a href="https://github-insights.github.io">github-insights.github.io</a></li>
                             </ul>
                         </>
                     </SubSection>
 
-                    <div>
-                        <h3 className="text-lg font-semibold text-gray-900">
-                            Third Life — KDG, The Lab Project
-                        </h3>
-                        <TextBlock>
-                            Using Rust and the Bevy engine, in a team of three we built a simulation of basic human civilisation.
-                            Implementing systems to replicate human reproduction, beef and wheat farming and simple economy to see
-                            how different starting conditions could affect survivability.
-                        </TextBlock>
-                        <ul className="mt-2 text-blue-600">
-                            <li>Repo: <a href='https://github.com/tomellm/third_life'>github.com/tomellm/third_life</a></li>
-                            <li>Article: <a href='https://dev.to/tomellm/third-life-simulating-reality-41if'>dev.to/tomellm/third-life-simulating-reality-41if</a></li>
-                        </ul>
-                    </div>
+                    <SubSection>
+                        <>
+                            <SubsectionHeader content='Third Life — KDG, The Lab Project' dates='' />
+                            <TextBlock>
+                                Using Rust and the Bevy engine, in a team of three we built a simulation of basic human civilisation.
+                                Implementing systems to replicate human reproduction, beef and wheat farming and simple economy to see
+                                how different starting conditions could affect survivability.
+                            </TextBlock>
+                            <ul className="mt-2 text-gray-950">
+                                <li>Repo: <a href='https://github.com/tomellm/third_life'>github.com/tomellm/third_life</a></li>
+                                <li>Article: <a href='https://dev.to/tomellm/third-life-simulating-reality-41if'>dev.to/tomellm/third-life-simulating-reality-41if</a></li>
+                            </ul>
+                        </>
+                    </SubSection>
                 </>
             </InnerSection>
         </Section>
@@ -126,7 +125,7 @@ function Skills() {
                     </TextBlock>
 
                     <SectionHeader content='LANGUAGES' />
-                    <TextBlock>English, German"</TextBlock>
+                    <TextBlock>English, German</TextBlock>
                 </>
             </InnerSection>
         </Section>
@@ -160,7 +159,7 @@ function Reference() {
             <InnerSection>
                 <>
                     <SectionHeader content='Reference' />
-                    <p className="text-gray-700">Tim Peeters - Xplore (Contact On Request)</p>
+                    <p className="text-gray-200">Tim Peeters - Xplore (Contact On Request)</p>
                 </>
             </InnerSection>
         </Section>
@@ -172,10 +171,10 @@ function Contact() {
         <Section fullscreen={false}>
             <div className="h-full px-32 py-32 flex flex-col items-center">
                 <ContactTextBlock>I look forward to hearing from You.</ContactTextBlock>
-                <div className='w-20 pt-10'>
+                <div className='m-10'>
                     <a href='https://www.linkedin.com/in/henry-bley-90295264'>
                         <div className='rounded-lg bg-gray-200 p-j'>
-                            <img src={li_logo} />
+                            <img className='w-20 p-2' src={li_logo} />
                         </div>
                     </a>
                 </div>
@@ -185,7 +184,7 @@ function Contact() {
 }
 function App() {
     return (
-        <div className="bg-amber-800 flex flex-col">
+        <div className="bg-amber-700 flex flex-col">
             <Header />
             <Experience />
             <Projects />

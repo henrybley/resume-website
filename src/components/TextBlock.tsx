@@ -5,7 +5,7 @@ interface TextBlockProps {
 
 export function TextBlock({ children }: TextBlockProps) {
     return (
-        <p className="mt-6 text-gray-700 leading-relaxed">
+        <p className="mt-6 text-gray-100 leading-relaxed">
             {children}
         </p>
     );
