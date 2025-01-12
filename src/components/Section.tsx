@@ -7,7 +7,7 @@ interface SectionProps {
 export function Section({ children, fullscreen }: SectionProps) {
 
     return (
-        <div className={(fullscreen ? "sm:min-h-screen lg:h-screen pt-24 " : "") + "pb-24 px-6 lg:px-36"}>
+        <div className={(fullscreen ? "sm:min-h-screen lg:h-screen pt-8 lg:pt-24 " : "") + "pb-24 px-6 lg:px-48"}>
             <div className={"h-full bg-gray-700 shadow-lg rounded-lg overflow-hidden"}>
                 {children}
             </div>

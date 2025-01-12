@@ -143,7 +143,7 @@ function Education() {
                         content='Karel De Grote Hogeschool'
                         dates='July 2021 - Sept 2024'
                     />
-                    <p className="text-gray-700">
+                    <p className="text-gray-200">
                         Professional Bachelors, Applied Computer Science
                     </p>
                 </>
@@ -171,7 +171,7 @@ function Contact() {
         <Section fullscreen={false}>
             <div className="h-full px-32 py-32 flex flex-col items-center">
                 <ContactTextBlock>I look forward to hearing from You.</ContactTextBlock>
-                <div className='m-10'>
+                <div>
                     <a href='https://www.linkedin.com/in/henry-bley-90295264'>
                         <div className='rounded-lg bg-gray-200 p-j'>
                             <img className='w-20 p-2' src={li_logo} />
